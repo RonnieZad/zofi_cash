@@ -6,12 +6,9 @@ void main() {
   final homePageController = Get.put(HomePageController());
 
   group('test insertText function,', () {
-    test(
-      'initial value should be empty',
-      () {
-        expect(homePageController.amountController.value.text, '');
-      },
-    );
+    test('initial value should be empty', () {
+      expect(homePageController.amountController.value.text, '');
+    });
 
     test('check whether insert text is called and text is inserted 1', () {
       homePageController.insertText('1');
