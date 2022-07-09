@@ -5,16 +5,21 @@ import 'package:zofi_cash/controllers/home_page_controller.dart';
 void main() {
   final homePageController = Get.put(HomePageController());
   test(
-    'initial value should be 0',
+    'initial value should be empty',
     () {
       expect(homePageController.amountController.value.text, '');
     },
   );
 
-  group('insertText', () {
-    test('check whether insert text is called', () {
+  group('test insertText function', () {
+    test('check whether insert text is called and text is inserted 1', () {
       homePageController.insertText('1');
       expect(homePageController.amountController.value.text, '1');
+    });
+
+    test('check whether  insert text is called and text is inserted 2', () {
+      homePageController.insertText('32');
+      expect(homePageController.amountController.value.text, '132');
     });
   });
 }

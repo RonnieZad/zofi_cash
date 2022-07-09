@@ -13,5 +13,10 @@ void main() {
       var pageChanger = pageController.pageShuffler(0);
       expect(pageChanger.value, 0);
     });
+
+    test('check current page index set to 1', () {
+      var pageChanger = pageController.pageShuffler(1);
+      expect(pageChanger.value, 1);
+    });
   });
 }
