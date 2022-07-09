@@ -17,9 +17,14 @@ void main() {
       expect(homePageController.amountController.value.text, '1');
     });
 
-    test('check whether  insert text is called and text is inserted 2', () {
+    test('check whether insert text is called and text is inserted 2', () {
       homePageController.insertText('32');
       expect(homePageController.amountController.value.text, '132');
+    });
+
+    test('check whether "." is inserted', () {
+      homePageController.insertText('.29');
+      expect(homePageController.amountController.value.text, '132.29');
     });
   });
 }
