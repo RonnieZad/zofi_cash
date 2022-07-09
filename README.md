@@ -1,4 +1,4 @@
-# zofi_cash
+# ZOFI CASH
 
 A new Flutter project
 
