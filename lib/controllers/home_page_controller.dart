@@ -1,15 +1,36 @@
+//  ZOFI CASH APP
+//
+//  Created by Ronnie Zad Muhanguzi .
+//  2022, Zofi Cash App. All rights reserved.
+//
+//  Unless required by applicable law or agreed to in writing, software
+//  distributed under the License is distributed on an "AS IS" BASIS,
+//  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:lottie/lottie.dart';
-
 import '../constants/constants.dart';
 
+/// #####  Home Page Controller
+/// Here we are creating our [HomePageController] class
 class HomePageController extends GetxController {
+
+  /// #####  Amount Controller
+/// Here we are initializing the [amountController] and marking it as an observable variable using
+/// [.obs] from the `package:get`
   final amountController = TextEditingController().obs;
 
-  insertText(String textToInsert) {
+/// #####  insertText method
+/// This method is used to input text from a user via the keypad.
+/// Here we first check  if the `amountController` current selection is mot empty  we then set the
+/// new cursor position to the current controller position and move it by the length of the
+/// [inserted text] . We then replace the substring with the [insertedText] and set it to text value
+/// of the controller.
+/// Also the maximum text length is set to 9.
+  void insertText(String textToInsert) {
     if (amountController.value.selection.start >= 0) {
       int newPosition =
           amountController.value.selection.start + textToInsert.length;
@@ -27,6 +48,10 @@ class HomePageController extends GetxController {
     }
   }
 
+/// #####  showSuccessDialog
+/// Here were are returning the `showDialog` method which displays a success dialog overlay to a user
+/// for a successful transaction. We are using the Lottie from the `package:lottie` to display
+/// an animated lottie file to the user
   Future showSuccessDialog(BuildContext context) {
     return showDialog(
         context: context,

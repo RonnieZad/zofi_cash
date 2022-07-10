@@ -1,3 +1,12 @@
+//  ZOFI CASH APP
+//
+//  Created by Ronnie Zad Muhanguzi .
+//  2022, Zofi Cash App. All rights reserved.
+//
+//  Unless required by applicable law or agreed to in writing, software
+//  distributed under the License is distributed on an "AS IS" BASIS,
+//  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -21,9 +30,11 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  // This widget is the root of your application.
+  // This widget is the root of your application. You might like to think of it as the wall of our
+  // house on which we pin and hang our Pager which is our canvas
   @override
   Widget build(BuildContext context) {
+    //setting screen ratio so it does not change with device DPI
     return ScreenUtilInit(
       designSize: const Size(520, 890),
       builder: (c, w) => MaterialApp(

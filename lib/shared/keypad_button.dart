@@ -1,8 +1,21 @@
+//  ZOFI CASH APP
+//
+//  Created by Ronnie Zad Muhanguzi .
+//  2022, Zofi Cash App. All rights reserved.
+//
+
+//  Unless required by applicable law or agreed to in writing, software
+//  distributed under the License is distributed on an "AS IS" BASIS,
+//  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+
 import 'package:bouncing_widget/bouncing_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:zofi_cash/constants/constants.dart';
 
+/// #####  Key Pad Button
+/// This is a custom keypad with it takes an `index` of type [int] and `tapAction` of type
+/// [VoidCallback]
 class KeyPadButton extends StatefulWidget {
   const KeyPadButton({Key? key, required this.index, required this.tapAction})
       : super(key: key);

@@ -1,3 +1,12 @@
+//  ZOFI CASH APP
+//
+//  Created by Ronnie Zad Muhanguzi .
+//  2022, Zofi Cash App. All rights reserved.
+//
+//  Unless required by applicable law or agreed to in writing, software
+//  distributed under the License is distributed on an "AS IS" BASIS,
+//  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -7,9 +16,10 @@ import 'package:zofi_cash/constants/constants.dart';
 import 'package:zofi_cash/controllers/home_page_controller.dart';
 import 'package:zofi_cash/shared/shared.dart';
 import 'package:zofi_cash/utils/utils.dart';
-
 import '../animation/animation.dart';
 
+/// #####  Home Page
+/// This is the home page
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
 
@@ -18,6 +28,7 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+  /// Here we are injecting the [HomePageController] dependency
   final homePageController = Get.put(HomePageController());
 
   @override
@@ -106,6 +117,8 @@ class _HomePageState extends State<HomePage> {
                         child: Column(
                           mainAxisSize: MainAxisSize.min,
                           children: [
+                            ///here we make a grid of 9 blocks and inflate it with the KeyPad buttons, and
+                            ///pass the index value plus 1
                             GridView.builder(
                                 padding: EdgeInsets.only(
                                     left: 10.w, right: 10.w, top: 25.h),

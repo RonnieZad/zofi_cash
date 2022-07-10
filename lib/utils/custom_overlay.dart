@@ -1,28 +1,28 @@
+//  ZOFI CASH APP
+//
+//  Created by Ronnie Zad Muhanguzi .
+//  2022, Zofi Cash App. All rights reserved.
+//
+//  Unless required by applicable law or agreed to in writing, software
+//  distributed under the License is distributed on an "AS IS" BASIS,
+//  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 
 import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:get/get_state_manager/get_state_manager.dart';
 import 'package:lottie/lottie.dart';
 import 'package:oktoast/oktoast.dart';
 
-class AnimatedTextExample {
-  final String label;
-  final Color? color;
-  final Widget child;
-
-  const AnimatedTextExample({
-    required this.label,
-    required this.color,
-    required this.child,
-  });
-}
-
 class CustomOverlay {
   CustomOverlay._();
-  final bool isError = false;
 
-  static showToast(String message, Color bgColor, Color textColor,
+  /// #### Show Toast method
+  /// Here we have a static `showToast` method of type [ToastFuture] from the `package:oktoast`
+  /// It takes parameters message of type [String] which is th text to display, bgColor od type
+  /// [Color] which is the background color of the Toast and textColor of type [Color] which is the
+  /// color of the text.
+  /// This method returns the `showToastWidget` from `package:oktoast` which displays a toast
+  static ToastFuture showToast(String message, Color bgColor, Color textColor,
       {isError = false}) {
     Widget widget = Stack(clipBehavior: Clip.none, children: [
       Padding(
@@ -64,7 +64,7 @@ class CustomOverlay {
             : Container(),
       )
     ]);
-    showToastWidget(
+    return showToastWidget(
       widget,
       position: ToastPosition.top,
       dismissOtherToast: true,
