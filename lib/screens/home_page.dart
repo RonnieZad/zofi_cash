@@ -237,6 +237,7 @@ class _HomePageState extends State<HomePage> {
                                             CustomOverlay.showLoaderOverlay();
                                             await Future.delayed(
                                                 const Duration(seconds: 2));
+                                      if (!mounted) return;
                                             homePageController
                                                 .showSuccessDialog(context);
                                           }
@@ -264,6 +265,7 @@ class _HomePageState extends State<HomePage> {
                                             CustomOverlay.showLoaderOverlay();
                                             await Future.delayed(
                                                 const Duration(seconds: 2));
+                                            if (!mounted) return;
                                             homePageController
                                                 .showSuccessDialog(context);
                                           }
