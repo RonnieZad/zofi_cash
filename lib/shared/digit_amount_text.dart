@@ -12,10 +12,10 @@ import 'package:flutter/material.dart';
 import 'package:zofi_cash/utils/utils.dart';
 import '../constants/constants.dart';
 
-/// #####  Text Formatter
-/// The Text Formatter returns a [Text] widget  and uses the [Helper] util class
-/// to get and parse, format the text from the user using the `getTextDigit` method
 class TextFormatter extends StatelessWidget {
+  /// #####  Text Formatter
+  /// The Text Formatter returns a [Text] widget  and uses the [Helper] util class
+  /// to get and parse, format the text from the user using the `getTextDigit` method
   const TextFormatter({Key? key, required this.textToFormat}) : super(key: key);
   final String textToFormat;
 

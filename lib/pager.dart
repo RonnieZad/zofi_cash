@@ -15,11 +15,11 @@ import 'package:zofi_cash/constants/constants.dart';
 import 'package:zofi_cash/controllers/pager_controller.dart';
 import 'package:zofi_cash/screens/screens.dart';
 
-/// #####  Pager class
-/// Here we are creating our [Pager] class
-/// This is like our main canvas on which we paint and draw pages and then put it up on the wall
-///  [MyApp] for this case.
 class Pager extends StatefulWidget {
+  /// #####  Pager class
+  /// Here we are creating our [Pager] class
+  /// This is like our main canvas on which we paint and draw pages and then put it up on the wall
+  ///  [MyApp] for this case.
   const Pager({Key? key}) : super(key: key);
 
   @override

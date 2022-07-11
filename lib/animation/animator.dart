@@ -10,11 +10,11 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
 
-///#### Animator Animation
+class Animator extends StatefulWidget {
+  ///#### Animator Animation
 ///This is the [Animator] animation class which uses the [AnimatedBuilder] to create a custom
 ///animation. This takes a curve, builder, and  delay of type [int] which is the Duration
 /// of the animation
-class Animator extends StatefulWidget {
   const Animator(
       {Key? key,
       this.curve = Curves.linear,

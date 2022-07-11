@@ -18,9 +18,9 @@ import 'package:zofi_cash/shared/shared.dart';
 import 'package:zofi_cash/utils/utils.dart';
 import '../animation/animation.dart';
 
-/// #####  Home Page
-/// This is the home page
 class HomePage extends StatefulWidget {
+  /// #####  Home Page
+  /// This is the home page
   const HomePage({Key? key}) : super(key: key);
 
   @override
@@ -237,7 +237,7 @@ class _HomePageState extends State<HomePage> {
                                             CustomOverlay.showLoaderOverlay();
                                             await Future.delayed(
                                                 const Duration(seconds: 2));
-                                      if (!mounted) return;
+                                            if (!mounted) return;
                                             homePageController
                                                 .showSuccessDialog(context);
                                           }

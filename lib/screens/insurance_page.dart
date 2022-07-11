@@ -10,9 +10,9 @@
 import 'package:flutter/material.dart';
 import '../constants/constants.dart';
 
-/// #####  Insurance Page
-/// This is the insurance page
 class InsurancePage extends StatelessWidget {
+  /// #####  Insurance Page
+  /// This is the insurance page
   const InsurancePage({Key? key}) : super(key: key);
 
   @override

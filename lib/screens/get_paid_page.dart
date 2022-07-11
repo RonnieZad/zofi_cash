@@ -10,9 +10,9 @@
 import 'package:flutter/material.dart';
 import '../constants/constants.dart';
 
-/// #####  Get Paid Page
-/// This is the get paid page
 class GetPaidPage extends StatelessWidget {
+  /// #####  Get Paid Page
+  /// This is the get paid page
   const GetPaidPage({Key? key}) : super(key: key);
 
   @override

@@ -10,9 +10,9 @@
 import 'package:flutter/material.dart';
 import '../constants/constants.dart';
 
-/// #####  Finances Page
-/// This is the finances page
 class FinancesPage extends StatelessWidget {
+  /// #####  Finances Page
+  /// This is the finances page
   const FinancesPage({Key? key}) : super(key: key);
 
   @override

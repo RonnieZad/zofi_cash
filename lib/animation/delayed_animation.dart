@@ -10,11 +10,11 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
 
-///#### Delayed Animation
-///This is the [DelayedAnimation] animation class which uses the [FadeTransition] and [SlideTransition]
-///transitions to smoothly fade and slide in a given widget. This takes a [child] which is the widget
-///to animated and delay of type [int] which is the Duration of the animation
 class DelayedAnimation extends StatefulWidget {
+  ///#### Delayed Animation
+  ///This is the [DelayedAnimation] animation class which uses the [FadeTransition] and [SlideTransition]
+  ///transitions to smoothly fade and slide in a given widget. This takes a [child] which is the widget
+  ///to animated and delay of type [int] which is the Duration of the animation
   final Widget child;
   final int delay;
 

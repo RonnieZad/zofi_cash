@@ -13,10 +13,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:zofi_cash/constants/constants.dart';
 
-/// #####  Key Pad Button
-/// This is a custom keypad with it takes an `index` of type [int] and `tapAction` of type
-/// [VoidCallback]
 class KeyPadButton extends StatefulWidget {
+  /// #####  Key Pad Button
+  /// This is a custom keypad with it takes an `index` of type [int] and `tapAction` of type
+  /// [VoidCallback]
   const KeyPadButton({Key? key, required this.index, required this.tapAction})
       : super(key: key);
   final int index;
