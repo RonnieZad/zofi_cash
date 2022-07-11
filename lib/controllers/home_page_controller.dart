@@ -52,7 +52,7 @@ class HomePageController extends GetxController {
 /// Here were are returning the `showDialog` method which displays a success dialog overlay to a user
 /// for a successful transaction. We are using the Lottie from the `package:lottie` to display
 /// an animated lottie file to the user
-  Future showSuccessDialog(BuildContext context) {
+  Future<void> showSuccessDialog(BuildContext context) {
     return showDialog(
         context: context,
         builder: (context) {
