@@ -26,4 +26,4 @@ jobs:
         # Title for the check results
           title: Flutter test results
         # The GitHub authentication token
-#           token: # optional, default is ${{ github.token }}
+          token: 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
