@@ -15,16 +15,15 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
+    steps:
       - name: Flutter Test Report
-      # You may pin to the exact commit or the version.
-      # uses: ueki-tomohiro/flutter-test-action@72f66ff681187137811d72343586550d5a497149
-      uses: ueki-tomohiro/flutter-test-action@v1.0.3
-      with:
+        uses: ueki-tomohiro/flutter-test-action@v1.0.3
+        with:
         # coverage/lcov.info
-        coveragePath: # optional
+#           coveragePath: # optional
         # input flutter test --machine result path
-        machinePath: # optional
+#           machinePath: # optional
         # Title for the check results
-        title: # optional, default is Flutter test results
+          title: Flutter test results
         # The GitHub authentication token
-        token: # optional, default is ${{ github.token }}
+#           token: # optional, default is ${{ github.token }}
