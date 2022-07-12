@@ -20,9 +20,9 @@ class TextFormatter extends StatelessWidget {
   final String textToFormat;
 
   @override
-  Widget build(Object context) {
+  Widget build(BuildContext context) {
     return Text(
-      Helper.getTextDigit(textToFormat)!,
+      Helper().getTextDigit(textToFormat)!,
       textAlign: TextAlign.center,
       style: amountTextStyle,
     );
