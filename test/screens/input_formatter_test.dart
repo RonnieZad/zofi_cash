@@ -13,22 +13,46 @@ import 'package:zofi_cash/utils/utils.dart';
 main() {
   group('Test Text Format,', () {
     test('when there is no user input', () {
-      var digit1 = Helper.getTextDigit('');
+      //Arrange
+      Helper helperFunction = Helper();
+
+      //Act
+      var digit1 = helperFunction.getTextDigit('');
+
+      //Assert
       expect(digit1, "0");
     });
     test('when user enters random value > 1000', () {
-      var digit1 = Helper.getTextDigit('34555');
-      expect(digit1, "34,555");
+      //Arrange
+      Helper helperFunction = Helper();
+
+      //Act
+      var digit2 = helperFunction.getTextDigit('34555');
+
+      //Assert
+      expect(digit2, "34,555");
     });
 
     test('when user enters random value < 1000', () {
-      var digit2 = Helper.getTextDigit('231');
-      expect(digit2, "231");
+      //Arrange
+      Helper helperFunction = Helper();
+
+      //Act
+      var digit3 = helperFunction.getTextDigit('231');
+
+      //Assert
+      expect(digit3, "231");
     });
 
     test('when user enters decimal value', () {
-      var digit3 = Helper.getTextDigit('1645.367');
-      expect(digit3, "1,645.367");
+      //Arrange
+      Helper helperFunction = Helper();
+
+      //Act
+      var digit4 = helperFunction.getTextDigit('1645.367');
+
+      //Assert
+      expect(digit4, "1,645.367");
     });
   });
 }
