@@ -11,7 +11,7 @@ import 'package:intl/intl.dart';
 
 class Helper {
   /// #### Get Text Digit method
-  /// This is the `getTextDigit`` method of type [String?]. It takes a parameter [textToFormat] of
+  /// This is the `getTextDigit` method of type [String?]. It takes a parameter [textToFormat] of
   /// type [String?] and returns the parsed and formatted string.
   /// Here we check whether the [textToFormat] string is empty or equal to null, then we proceed
   /// to check whether the input string contains a decimal point "." and if yes we can then split
@@ -23,7 +23,7 @@ class Helper {
   /// string does not contain  a string, we simply format the string as seen above and return the
   /// formatted string and otherwise we return zero "0" is the [textToFormat] is null...This is when
   /// a user has not input any digit yet.
-  static String? getTextDigit(String? textToFormat) {
+  String? getTextDigit(String? textToFormat) {
     if (textToFormat != null && textToFormat.isNotEmpty) {
       textToFormat = textToFormat.contains('.')
           ? '${NumberFormat.decimalPattern().format(int.parse(textToFormat.split('.')[0]))}.${textToFormat.split('.')[1]}'
