@@ -15,7 +15,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
-  steps:
       - name: Flutter Test Report
       # You may pin to the exact commit or the version.
       # uses: ueki-tomohiro/flutter-test-action@72f66ff681187137811d72343586550d5a497149
