@@ -4,7 +4,7 @@ Zofi Cash is the solution to all your financial emergencies. <a href="https://gi
 
 ## ✨ Requirements
 * Any Operating System (ie. MacOS X, Linux, Windows)
-* Any IDE with Flutter SDK installed (ie. IntelliJ, Android Studio, VSCode etc)
+* Any IDE with Flutter SDK installed (ie. VS Code, Android Studio, IntelliJ)
 * A little knowledge of Dart and Flutter
 * A brain to think 🤓🤓
 
