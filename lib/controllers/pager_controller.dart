@@ -20,7 +20,7 @@ class PagerController extends GetxController {
 
 /// #####  Current Index
 /// Here we are initializing the [currentIndex] value to 0 and marking it as an observable variable
-///  using [.obs] from the `package:get`
+///  using `obs` from the `package:get`
   RxInt currentIndex = 0.obs;
 
 /// #####  pageShuffler method

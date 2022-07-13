@@ -20,14 +20,14 @@ class HomePageController extends GetxController {
 
   /// #####  Amount Controller
 /// Here we are initializing the [amountController] and marking it as an observable variable using
-/// [.obs] from the `package:get`
+/// `obs` from the `package:get`
   final amountController = TextEditingController().obs;
 
 /// #####  insertText method
 /// This method is used to input text from a user via the keypad.
 /// Here we first check  if the `amountController` current selection is mot empty  we then set the
 /// new cursor position to the current controller position and move it by the length of the
-/// [inserted text] . We then replace the substring with the [insertedText] and set it to text value
+/// `inserted text` . We then replace the substring with the `insertedText` and set it to text value
 /// of the controller.
 /// Also the maximum text length is set to 9.
   void insertText(String textToInsert) {
