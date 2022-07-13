@@ -8,7 +8,7 @@ Zofi Cash is the solution to all your financial emergencies. <a href="https://gi
 * A little knowledge of Dart and Flutter
 * A brain to think 🤓🤓
 
-## 🚀Run and Build
+##  🚀 Run and Build
 
 Get a copy by cloning the repo using
 - git clone https://github.com/RonnieZad/zofi_cash.git
@@ -25,6 +25,6 @@ To build the app with sound null safety use the command below
 To build apk without sound null safety for the case of legacy packages use the command below
 - flutter build apk --no-sound-null-safety
 
-## 📚Documentation
+## 📚 Documentation
 
 For more API reference and documentation, please visit [ZOFI CASH Documentation](https://zofi-cash-app.web.app)
