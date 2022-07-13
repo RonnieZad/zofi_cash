@@ -10,6 +10,9 @@
 .svn/
 migrate_working_dir/
 
+#Firebase
+.firebase
+
 # IntelliJ related
 *.iml
 *.ipr
